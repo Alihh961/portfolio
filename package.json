@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Mon portfolio utilisant Node.js",
+  "main": "server.js",
+  "scripts": {
+    "sass-watch": "sass -w public/style/sass/app.scss/:public/style/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Alihh961/portfolio.git"
+  },
+  "author": "Ali HH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alihh961/portfolio/issues"
+  },
+  "homepage": "https://github.com/Alihh961/portfolio#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
