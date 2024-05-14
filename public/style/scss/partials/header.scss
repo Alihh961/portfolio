@@ -1,17 +1,76 @@
 .header{
 
   width: 100%;
+  height: 70px;
   position: fixed;
   top: 0;
   transition: 0.5s;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 0 20px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
 
 
   &.scroll{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 0 10px;
+    height: 55px;
+
+    .social-network {
+      li{
+        a{
+          i{
+            font-size: larger;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+
+  nav{
+
+    width: 30%;
+    ul{
+      display: flex;
+      gap: 15px;
+      li{
+        text-decoration: none;
+        list-style: none;
+
+        a{
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  h2{
+    width: 40%;
+    text-align: center;
+  }
+
+
+  .social-network{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    width: 30%;
+
+    li{
+      list-style: none;
+
+      a{
+        i{
+          font-size: x-large;
+          transition: 0.2s;
+        }
+      }
+    }
+
   }
 }
 

@@ -1,17 +1,23 @@
+@import "fonts";
 @import "home";
 @import "partials/header";
-
 
 
 
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body{
   padding: 0;
   margin: 0;
   background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+a:visited{
+  color: black;
 }
 

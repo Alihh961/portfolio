@@ -1,15 +1,59 @@
+@font-face {
+  font-family: "latoLight";
+  src: url("../../fonts/Lato-Light.ttf") format("truetype");
+}
 .header {
   width: 100%;
+  height: 70px;
   position: fixed;
   top: 0;
   transition: 0.5s;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header.scroll {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 0 10px;
+  height: 55px;
+}
+.header.scroll .social-network li a i {
+  font-size: larger;
+  transition: 0.2s;
+}
+.header nav {
+  width: 30%;
+}
+.header nav ul {
+  display: flex;
+  gap: 15px;
+}
+.header nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.header h2 {
+  width: 40%;
+  text-align: center;
+}
+.header .social-network {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  width: 30%;
+}
+.header .social-network li {
+  list-style: none;
+}
+.header .social-network li a i {
+  font-size: x-large;
+  transition: 0.2s;
 }
 
 body {
@@ -19,12 +63,18 @@ body {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+a:visited {
+  color: black;
 }
 
 /*# sourceMappingURL=app.css.map */
