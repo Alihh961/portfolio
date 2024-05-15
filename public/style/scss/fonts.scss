@@ -3,4 +3,9 @@
   src: url("../../fonts/Lato-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'latoRegular';
+  src: url("../../fonts/Lato-Regular.ttf") format("truetype");
+}
 $font-lato-light:'latoLight';
+$font-lato-regular:'latoRegular';
