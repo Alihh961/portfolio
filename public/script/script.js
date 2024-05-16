@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
         const welcomeSection = document.querySelector('.welcome-section');
 
-        document.body.style.overflow = 'hidden';
+        // document.body.style.overflow = 'hidden';
 
         const goContainer = document.querySelector('.container-arrow');
         const projectsSection = document.querySelector('.projects-section');
