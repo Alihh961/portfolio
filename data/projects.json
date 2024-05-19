@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Blue Wave",
+    "coverImage": "",
+    "description": "",
+    "state": "Finished",
+    "hint": "",
+    "github": "",
+    "url": ""
+  },
+  {
+    "name": "Wika",
+    "coverImage": "",
+    "description": "",
+    "state": "Finished",
+    "hint": "",
+    "github": "",
+    "url": ""
+  },
+  {
+    "name": "Calculator",
+    "coverImage": "",
+    "description": "",
+    "state": "Finished",
+    "hint": "",
+    "github": "",
+    "url": ""
+  },
+  {
+    "name": "Minesweeper",
+    "coverImage": "",
+    "description": "",
+    "state": "In-Progress",
+    "hint": "",
+    "github": "",
+    "url": ""
+  }
+]

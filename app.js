@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs');
 
 const dotenv = require('dotenv');
 const path = require("path");
@@ -17,7 +18,10 @@ app.use(express.static(publicPath)); // to have the access to static files in th
 app.use(express.urlencoded({extended: true})); // to receive data using post method
 
 app.get('/' , (req , res )=>{
-    res.render('home');
+
+    let projects = JSON.parse(fs.readFileSync('./data/projects.json' , 'utf-8')) ;
+
+    res.render('home' , {projects});
 });
 
 

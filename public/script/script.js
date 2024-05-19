@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
     window.onscroll = function () {
-        scrollFunction()
+        changeHeaderStyleInScrolling()
     };
+
+    // to always go to the top of the page when the DOM is loaded
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
 
 
     if (title === 'Home') {
@@ -23,11 +28,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
             welcomeSection.classList.add('scroll-up');
 
 
-        })
+        });
+
+
 
     }
 
-    function scrollFunction() {
+
+    //used to change the header style
+    function changeHeaderStyleInScrolling() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.querySelector("header").classList.add('scroll')
         } else {

@@ -11,23 +11,39 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
-    <div id="title">
-        <span>Hello!</span><br>
-        <span>Welcome to my portfolio</span>
+
+    <div class="title-container">
+
+
+        <div id="title">
+            <span>Hello!</span><br>
+            <span>Welcome to my portfolio</span>
+        </div>
+
+
+        <div class="container-arrow">
+
+            <!--        <div class="arrow"></div>-->
+            <p class="go-paragraph">Go!
+                <svg class="heading__arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24"><title>arrow-right</title>
+                    <path d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+                </svg>
+            </p>
+        </div>
+
     </div>
 
+    <img src="statics/assets/images/me.png">
 
-    <div class="container-arrow">
-
-        <div class="arrow"></div>
-        <p class="go-paragraph">Go!</p>
-    </div>
 </section>
 
 <section class="about-me-section">
     <div class="about-me-div">
         <h2>About Me</h2>
-        <p>I'm a full-stack web developer, dedicated to building sleek, user-friendly websites that deliver exceptional
+        <span class="h2-underline"></span>
+        <p>I'm a <strong>full-stack web developer</strong> , dedicated to building sleek, user-friendly websites that
+            deliver exceptional
             experiences.</p>
     </div>
 
@@ -35,13 +51,32 @@
         <div class="me-div">
             <h3>Who I Am!</h3>
             <p>
-                I specialize in both frontend and backend development, handling the visual and functional aspects of
+                I specialize in both <strong> frontend </strong> and <strong> backend</strong> development, handling the
+                visual and functional aspects of
                 websites and web applications to ensure overall success. You can explore some of my projects in the
                 Projects section.
 
                 I'm actively seeking job opportunities where I can contribute, learn, and grow. If you have a suitable
                 opportunity that aligns with my skills and experience, please don't hesitate to get in touch!
             </p>
+
+            <button class="btn-pushable btn-contact" role="button">
+                <span class="btn-shadow"></span>
+                <span class="btn-edge"></span>
+                <span class="btn-front text">
+    Contact me
+  </span>
+            </button>
+
+            <!--            <button class="btn-pushable btn-projects" role="button">-->
+            <!--                <span class="btn-shadow"></span>-->
+            <!--                <span class="btn-edge"></span>-->
+            <!--                <span class="btn-front text">-->
+            <!--    My Projects-->
+            <!--  </span>-->
+            <!--            </button>-->
+
+
         </div>
 
         <div class="skills-div">
@@ -84,5 +119,24 @@
 </section>
 
 <section class="projects-section">
+
+    <div class="projects-div">
+        <h2>Projects</h2>
+        <span class="h2-underline"></span>
+    </div>
+
+    <div class="projects-container">
+
+        <% projects.forEach( project=>{ %>
+
+            <div class="project">
+
+                <p><%= project.name %></p>
+
+            </div>
+
+        <% }) %>
+
+    </div>
 
 </section>
