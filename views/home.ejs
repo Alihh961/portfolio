@@ -127,13 +127,27 @@
 
     <div class="projects-container">
 
-        <% projects.forEach( project=>{ %>
+        <% projects.forEach( (project, index)=>{ %>
 
-            <div class="project">
 
-                <p><%= project.name %></p>
+            <% if( index % 2 === 0) { %>
 
-            </div>
+                <div class=' project project-even project-<%= index %> left-side <%= project.state.toLowerCase() %>'>
+
+
+                    <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
+                    <p><%= project.name %></p>
+
+                </div>
+
+            <% } else { %>
+                <div class='project project-odd project-<%= index %> right-side <%= project.state.toLowerCase() %>'>
+                    <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
+
+                    <p><%= project.name %></p>
+
+                </div>
+            <% } %>
 
         <% }) %>
 

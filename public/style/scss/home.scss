@@ -463,6 +463,9 @@ $shadows-big: multiple-box-shadow(150);
 
 .projects-section {
 
+
+  padding: 25px 50px;
+
   .projects-div {
 
     width: 100%;
@@ -475,6 +478,106 @@ $shadows-big: multiple-box-shadow(150);
       text-transform: uppercase;
     }
 
+  }
+
+
+  .projects-container{
+
+    .project{
+      position: relative;
+      overflow: hidden;
+
+
+
+      background: rebeccapurple;
+      width: 55%;
+      margin-bottom: 25px;
+
+      &.left-side{
+        float: left;
+
+        &.ready:before{
+          content:"Ready";
+          text-align: center;
+          font-weight: 700;
+          transform: rotate(-45deg);
+          left: -31px;
+          top: 15px;
+          width: 125px;
+          background-color: darkgreen;
+          position: absolute;
+          padding: 7px 0;
+        }
+
+        &.in-progress:before{
+          content: "In-Progress";
+          text-align: center;
+          font-weight: 700;
+          transform: rotate(-45deg);
+          left: -35px;
+          top: 24px;
+          width: 150px;
+          background-color: #9a7c1c;
+          position: absolute;
+          padding: 7px 0;
+        }
+
+
+        img{
+          float: right;
+        }
+      }
+
+      &.right-side{
+        float:right;
+
+        &.ready:before{
+          content:"Ready";
+          text-align: center;
+          font-weight: 700;
+          transform: rotate(45deg);
+          right: -31px;
+          top: 15px;
+          width: 125px;
+          background-color: darkgreen;
+          position: absolute;
+          padding: 7px 0;
+
+        }
+
+        &.in-progress:before{
+          content: "In-Progress";
+          text-align: center;
+          font-weight: 700;
+          transform: rotate(45deg);
+          right: -35px;
+          top: 24px;
+          width: 150px;
+          background-color: #9a7c1c;
+          position: absolute;
+          padding: 7px 0;
+        }
+
+
+
+
+        img{
+          float: left;
+        }
+      }
+
+
+      p{
+        text-align: center;
+        margin-top: 10%;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: capitalize;
+        letter-spacing: 5px;
+      }
+
+
+    }
   }
 
 }
