@@ -2,7 +2,7 @@
   {
     "name": "Blue Wave",
     "coverImage": "",
-    "description": "",
+    "description": "Blue wave app",
     "state": "In-Progress",
     "hint": "",
     "github": "",
@@ -11,7 +11,7 @@
   {
     "name": "Wika",
     "coverImage": "",
-    "description": "",
+    "description": "Wika app",
     "state": "Ready",
     "hint": "",
     "github": "",
@@ -20,7 +20,7 @@
   {
     "name": "Calculator",
     "coverImage": "",
-    "description": "",
+    "description": "Calculator app",
     "state": "Ready",
     "hint": "",
     "github": "",
@@ -29,7 +29,7 @@
   {
     "name": "Minesweeper",
     "coverImage": "",
-    "description": "",
+    "description": "Minesweeper game",
     "state": "In-Progress",
     "hint": "",
     "github": "",

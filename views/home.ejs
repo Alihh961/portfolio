@@ -135,14 +135,25 @@
                 <div class=' project project-even project-<%= index %> left-side <%= project.state.toLowerCase() %>'>
 
 
-                    <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
+                    <div class="image-container">
+                        <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
+                        <p><%= project.description%></p>
+
+                    </div>
                     <p><%= project.name %></p>
 
                 </div>
 
             <% } else { %>
                 <div class='project project-odd project-<%= index %> right-side <%= project.state.toLowerCase() %>'>
-                    <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
+
+
+                    <div class="image-container">
+
+                        <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
+                        <p><%= project.description%></p>
+
+                    </div>
 
                     <p><%= project.name %></p>
 

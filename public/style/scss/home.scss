@@ -80,7 +80,7 @@ $shadows-big: multiple-box-shadow(150);
     margin-right: 100px;
   }
 
-  //display: none;
+  display: none;
   min-height: 100vh;
   overflow: hidden;
   position: absolute;
@@ -481,35 +481,34 @@ $shadows-big: multiple-box-shadow(150);
   }
 
 
-  .projects-container{
+  .projects-container {
 
-    .project{
+    .project {
       position: relative;
       overflow: hidden;
-
 
 
       background: rebeccapurple;
       width: 55%;
       margin-bottom: 25px;
 
-      &.left-side{
+      &.left-side {
         float: left;
 
-        &.ready:before{
-          content:"Ready";
+        &.ready:before {
+          content: "Ready";
           text-align: center;
           font-weight: 700;
           transform: rotate(-45deg);
           left: -31px;
           top: 15px;
           width: 125px;
-          background-color: darkgreen;
+          background-color: #00FF00;
           position: absolute;
           padding: 7px 0;
         }
 
-        &.in-progress:before{
+        &.in-progress:before {
           content: "In-Progress";
           text-align: center;
           font-weight: 700;
@@ -517,35 +516,65 @@ $shadows-big: multiple-box-shadow(150);
           left: -35px;
           top: 24px;
           width: 150px;
-          background-color: #9a7c1c;
+          background-color: #FFA500;
           position: absolute;
           padding: 7px 0;
         }
 
 
-        img{
+        .image-container {
+
           float: right;
+          width: 50%;
+          position: relative;
+
+          p{
+            opacity: 0;
+            height: 0;
+          }
+          &:hover p{
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            display: flex;
+            padding: 0 20px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 5px;
+            transition: 1s;
+
+          }
+          img {
+            width: 100%;
+
+          }
         }
       }
 
-      &.right-side{
-        float:right;
+      &.right-side {
+        float: right;
 
-        &.ready:before{
-          content:"Ready";
+        &.ready:before {
+          content: "Ready";
           text-align: center;
           font-weight: 700;
           transform: rotate(45deg);
           right: -31px;
           top: 15px;
           width: 125px;
-          background-color: darkgreen;
+          background-color: #00FF00;
           position: absolute;
           padding: 7px 0;
 
         }
 
-        &.in-progress:before{
+        &.in-progress:before {
           content: "In-Progress";
           text-align: center;
           font-weight: 700;
@@ -553,23 +582,51 @@ $shadows-big: multiple-box-shadow(150);
           right: -35px;
           top: 24px;
           width: 150px;
-          background-color: #9a7c1c;
+          background-color: #FFA500;
           position: absolute;
           padding: 7px 0;
         }
 
-
-
-
-        img{
+        .image-container {
           float: left;
+          width: 50%;
+          position: relative;
+
+
+          p{
+            opacity: 0;
+            height: 0;
+          }
+          &:hover p{
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            display: flex;
+            padding: 0 20px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 5px;
+            transition: 1s;
+
+          }
+
+          img {
+            width: 100%;
+          }
         }
+
       }
 
 
-      p{
+      >p {
         text-align: center;
-        margin-top: 10%;
+        margin-top: 15%;
         font-size: 20px;
         font-weight: 800;
         text-transform: capitalize;
