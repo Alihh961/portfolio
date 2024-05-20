@@ -136,11 +136,45 @@
 
 
                     <div class="image-container">
-                        <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
-                        <p><%= project.description%></p>
+                        <img src='statics/assets/images/projects/<%= project.coverImage %>' alt='<%= project.name %>'>
+                        <p><%= project.description %></p>
 
                     </div>
-                    <p><%= project.name %></p>
+                    <div class="project-info">
+
+
+                        <p><%= project.name %></p>
+
+                        <% if(project.github) { %>
+                            <% if(project.github.url) { %>
+
+                                <a href="<%= project.github.url %>" target="_blank" class="btn-0">View code</a>
+
+                            <% } else if(project.github.urlFront && project.github.urlBack ) {%>
+                                    <a href="<%= project.github.urlFront %>" target="_blank" class="btn-0">View code-Front</a>
+                                    <a href="<%= project.github.urlBack %>" target="_blank" class="btn-0">View code-Back</a>
+
+
+                                <%}%>
+
+                        <% } %>
+
+                        <% if(project.url) { %>
+
+                            <% if(project.url.url) { %>
+
+
+                            <a href="<%= project.url.url %>" target="_blank" class="btn-0">Visit site</a>
+
+                            <% }else if(project.url.urlFront && project.url.urlBack ){%>
+
+                                    <a href="<%= project.url.urlFront %>" target="_blank" class="btn-0">Visit site-Client</a>
+                                    <a href="<%= project.url.urlBack %>" target="_blank" class="btn-0">Visit site-Admin</a>
+
+                                <%}%>
+
+                        <% } %>
+                    </div>
 
                 </div>
 
@@ -150,12 +184,46 @@
 
                     <div class="image-container">
 
-                        <img src='statics/assets/images/projects/<%= project.url %>' alt='<%= project.name %>'>
-                        <p><%= project.description%></p>
+                        <img src='statics/assets/images/projects/<%= project.coverImage %>' alt='<%= project.name %>'>
+                        <p><%= project.description %></p>
 
                     </div>
+                    <div class="project-info">
 
-                    <p><%= project.name %></p>
+
+                        <p><%= project.name %></p>
+
+                        <% if(project.github) { %>
+                            <% if(project.github.url) { %>
+
+                                <a href="<%= project.github.url %>" target="_blank" class="btn-0">View code</a>
+
+                            <% } else if(project.github.urlFront && project.github.urlBack){%>
+                                <a href="<%= project.github.urlFront %>" target="_blank" class="btn-0">View code-Front</a>
+                                <a href="<%= project.github.urlBack %>" target="_blank" class="btn-0">View code-Back</a>
+
+
+                            <%}%>
+
+                        <% } %>
+
+                        <% if(project.url) { %>
+
+                            <% if(project.url.url) { %>
+
+
+                                <a href="<%= project.url.url %>" target="_blank" class="btn-0">Visit site</a>
+
+                            <% }else if(project.url.urlFront && project.url.urlBack ){%>
+
+                                <a href="<%= project.url.urlFront %>" target="_blank" class="btn-0">Visit site-Client</a>
+                                <a href="<%= project.url.urlBack %>" target="_blank" class="btn-0">Visit site-Admin</a>
+
+                            <%}%>
+
+                        <% } %>
+                    </div>
+
 
                 </div>
             <% } %>

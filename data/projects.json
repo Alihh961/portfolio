@@ -1,38 +1,70 @@
 [
   {
     "name": "Blue Wave",
-    "coverImage": "",
+    "coverImage": "me.png",
     "description": "Blue wave app",
     "state": "In-Progress",
     "hint": "",
-    "github": "",
-    "url": "me.png"
+    "github": {
+      "url" : "https://github.com/Alihh961/BlueWave",
+      "urlBack" : "",
+      "urlFront" : ""
+    },
+    "url": {
+      "url" : "",
+      "urlFront" : "",
+      "urlBack" : ""
+    }
   },
   {
     "name": "Wika",
-    "coverImage": "",
+    "coverImage": "me.png",
     "description": "Wika app",
     "state": "Ready",
     "hint": "",
-    "github": "",
-    "url": "me.png"
+    "github": {
+      "url" : "",
+      "urlFront" : "https://github.com/Alihh961/Wika---Frontend---Angular",
+      "urlBack" : "https://github.com/Alihh961/Wika---Backend---Symfony"
+    },
+    "url": {
+      "url" : "",
+      "urlFront" : "",
+      "urlBack" : ""
+    }
   },
   {
     "name": "Calculator",
-    "coverImage": "",
+    "coverImage": "me.png",
     "description": "Calculator app",
     "state": "Ready",
     "hint": "",
-    "github": "",
-    "url": "me.png"
+    "github": {
+      "url" : "https://github.com/Alihh961/Calculator-JS",
+      "urlFront" : "",
+      "urlBack" : ""
+    },
+    "url": {
+      "url" : "https://alihh961.github.io/Calculator-JS/",
+      "urlFront" : "",
+      "urlBack" : ""
+    }
   },
   {
     "name": "Minesweeper",
-    "coverImage": "",
+    "coverImage": "me.png",
     "description": "Minesweeper game",
     "state": "In-Progress",
     "hint": "",
-    "github": "",
-    "url": "me.png"
+    "github": {
+      "url" : "https://github.com/Alihh961/Minesweeper",
+      "urlFront" : "",
+      "urlBack" : ""
+    },
+    "url": {
+      "url" : "",
+      "urlFront" : "",
+      "urlBack" : ""
+    }
   }
 ]
