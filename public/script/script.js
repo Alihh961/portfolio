@@ -32,6 +32,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 
+        //changing the opacity of a project while scrolling into it
+
+        document.addEventListener('scroll', function () {
+            const projects = document.querySelectorAll('.project');
+            const windowHeight = window.innerHeight-100;
+
+            projects.forEach(project => {
+                const targetPosition = project.getBoundingClientRect().top;
+
+                if (targetPosition < windowHeight && targetPosition > 0) {
+                    project.style.opacity = '1';
+                    project.style.transform = "translateX(0)";
+
+                }
+            });
+        });
+
+
+
     }
 
 

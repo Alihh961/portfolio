@@ -366,6 +366,80 @@ $shadows-big: multiple-box-shadow(150);
 
   }
 
+
+  .me-and-more{
+    margin-top: 50px;
+
+    h2{
+      width: fit-content;
+      margin:20px auto;
+    }
+
+    p{
+      margin: 10px auto 20px auto;
+      letter-spacing: 1px;
+      color: #55555A;
+      line-height: 1.6;
+      font-size: 20px;
+    }
+
+    ul{
+      letter-spacing: 1px;
+      color: #55555A;
+      line-height: 1.6;
+
+        position: relative;
+  
+      li {
+        position: relative;
+        left: 0;
+        color:black;
+        list-style: none;
+        margin: 4px 0;
+        border-left: 2px solid #f50057;
+        transition: 0.5s;
+        cursor: pointer;
+        width: fit-content;
+      }
+      li:hover {
+        left: 10px;
+      }
+      li span {
+        position: relative;
+        padding: 8px 8px 8px 12px;
+        display: inline-block;
+        z-index: 1;
+        transition: 0.5s;
+        color: #55555A;
+
+        strong{
+          color: black;
+        }
+
+      }
+      li:hover span {
+        color: black;
+        strong{
+          color: black;
+        }
+      }
+      li:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #f50057;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 0.5s;
+      }
+      li:hover:before {
+        transform: scaleX(1);
+      }
+
+    }
+  }
+
 }
 
 
@@ -467,7 +541,7 @@ $shadows-big: multiple-box-shadow(150);
 .projects-section {
 
 
-  padding: 25px 50px;
+  padding: 160px 80px 80px 80px;
 
   .projects-div {
 
@@ -487,6 +561,9 @@ $shadows-big: multiple-box-shadow(150);
   .projects-container {
 
     .project {
+
+      opacity: 0;
+      transition: 2s;
       position: relative;
       overflow: hidden;
       max-height: 300px;
@@ -496,6 +573,8 @@ $shadows-big: multiple-box-shadow(150);
 
       &.left-side {
         float: left;
+        transform: translateX(-135%);
+
 
         &.ready:before {
           content: "Ready";
@@ -570,6 +649,7 @@ $shadows-big: multiple-box-shadow(150);
 
       &.right-side {
         float: right;
+        transform: translateX(135%);
 
         &.ready:before {
           content: "Ready";

@@ -34,6 +34,9 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
+
+
+
       }
     }
   }
@@ -84,6 +87,31 @@
             color: white;
           }
         }
+
+
+        &.coming-soon{
+
+          position: relative;
+          font-size: small;
+          pointer-events: none;
+          a{
+            -webkit-text-fill-color: #666666!important;
+
+          }
+
+          &:before{
+            font-weight: 700;
+            content: "Soon";
+            color: red;
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+
+          }
+
+        }
+
+
       }
     }
   }
