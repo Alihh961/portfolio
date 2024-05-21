@@ -42,4 +42,24 @@ body{
 }
 
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #7843E9;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 67, 233, 0.7);
+}
+
+
 
