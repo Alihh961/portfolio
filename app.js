@@ -26,4 +26,9 @@ app.get('/' , (req , res )=>{
 
 
 
+app.use((req, res) => {
+    res.render("404");
+});
+
+
 module.exports = app;

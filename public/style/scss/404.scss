@@ -1,0 +1,91 @@
+.notFound-section {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .container {
+    text-align: center;
+    color: #343a40;
+
+    h1 {
+      font-size: 5em;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .emoji {
+      font-size: 3em;
+    }
+
+    .animation {
+      font-size: 3em;
+      position: relative;
+      display: inline-block;
+    }
+
+    .animation::before, .animation::after {
+      content: '404';
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .animation::before {
+      animation: animation-anim-1 2s infinite linear alternate-reverse;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .animation::after {
+      animation: animation-anim-2 2s infinite linear alternate-reverse;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @keyframes animation-anim-1 {
+      0% {
+        transform: translate(2px, -2px);
+      }
+      33% {
+        transform: translate(-2px, 2px);
+      }
+      66% {
+        transform: translate(2px, -2px);
+      }
+      100% {
+        transform: translate(-2px, 2px);
+      }
+    }
+    @keyframes animation-anim-2 {
+      0% {
+        transform: translate(-2px, 2px);
+      }
+      33% {
+        transform: translate(2px, -2px);
+      }
+      66% {
+        transform: translate(-2px, 2px);
+      }
+      100% {
+        transform: translate(2px, -2px);
+      }
+    }
+
+  }
+
+
+}

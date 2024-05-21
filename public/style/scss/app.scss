@@ -2,7 +2,7 @@
 @import "home";
 @import "partials/header";
 @import "partials/footer";
-
+@import "404";
 
 
 *{
@@ -54,6 +54,8 @@ body{
 
 ::-webkit-scrollbar-thumb {
   background: #7843E9;
+  height: 70px;
+  border-radius: 5px;
 }
 
 
