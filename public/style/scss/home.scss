@@ -66,8 +66,8 @@ $shadows-big: multiple-box-shadow(150);
 }
 
 .welcome-section {
-
-  display: flex;
+display: none;
+  //display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -542,6 +542,7 @@ $shadows-big: multiple-box-shadow(150);
 
 
   padding: 160px 80px 80px 80px;
+  min-height: 1600px;
 
   .projects-div {
 

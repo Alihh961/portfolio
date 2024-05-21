@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #274791;
+  background-color: #1B2735;
   color: white;
   z-index: 150;
 
@@ -51,10 +51,11 @@
       gap: 15px;
 
       li {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         list-style: none;
         position: relative;
-        padding-bottom: 5px;
         text-align: center;
         //#75b5ff
         &:hover a {

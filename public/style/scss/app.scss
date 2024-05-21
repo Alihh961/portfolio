@@ -1,6 +1,7 @@
 @import "fonts";
 @import "home";
 @import "partials/header";
+@import "partials/footer";
 
 
 
@@ -17,6 +18,7 @@ body{
   margin: 0;
   box-sizing: border-box;
   background-color: #fafafa;;
+  overflow-x: hidden;
 
 }
 
@@ -32,6 +34,12 @@ body{
   margin-bottom: 35px;
 }
 
+
+.message-red{
+  color: red;
+  font-size: 16px;
+  margin: 10px auto;
+}
 
 
 

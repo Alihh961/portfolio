@@ -1,0 +1,58 @@
+.footer{
+  height: 250px;
+  background-color: #1B2735;
+  width: 100%;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+
+  h3{
+    color: white;
+    letter-spacing: 5px;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+  }
+
+  ul{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li{
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      list-style-type: none;
+
+      a{
+        color: white;
+        text-decoration: none;
+
+
+        i{
+
+          font-size: x-large;
+
+        }
+
+
+        &:hover{
+          color: #0066ff;
+
+          i{
+            color: #0066ff;
+            font-size: x-large;
+
+          }
+        }
+        &:visited{
+          color: white;
+        }
+      }
+    }
+  }
+
+}
